@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <!-- FLASH PREVENTION — runs before CSS paint, eliminates Arabic flash on English navigation -->
+  <script>(function(){var l=localStorage.getItem('line7_lang')||'ar';var r=document.documentElement;r.lang=l;r.dir=l==='ar'?'rtl':'ltr';}());</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مدونة مصنع الخط السابع للصناعات البلاستيكية">
+  <title>المدونة | مصنع الخط السابع</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header" id="mainHeader">
+    <a href="index.html" class="logo">
+      <img src="logo.png" class="logo-img" alt="Line 7 Factory Logo">
+      <span class="logo-text" data-i18n="logo.text">الخط السابع</span>
+    </a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html"  data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="products.html" data-i18n="nav.products">معداتنا</a></li>
+        <li><a href="blog.html" class="active" data-i18n="nav.blog">المدونة</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn" id="langToggle" onclick="toggleLang()">English</button>
+      <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" data-aos="fade-up">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <span><i class="fas fa-chevron-left" style="font-size:10px"></i></span>
+        <span data-i18n="nav.blog">المدونة</span>
+      </div>
+      <h1 data-i18n="blog.page_title">مدونة الخط السابع</h1>
+      <p data-i18n="blog.page_sub">آخر المستجدات والمقالات التقنية في عالم صناعة التغليف البلاستيكي</p>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section class="blog-section">
+    <div class="blog-grid">
+
+      <!-- ARTICLE 1: Smart Packaging -->
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="blog-img">
+          <img
+            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=800&auto=format&fit=crop"
+            alt=""
+            loading="lazy"
+          >
+          <span class="blog-category" data-i18n="blog.cat1">التقنية</span>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> <span data-i18n="blog.date1">١٥ أبريل ٢٠٢٤</span></span>
+            <span><i class="fas fa-clock"></i> <span data-i18n="blog.read1">٥ دقائق قراءة</span></span>
+          </div>
+          <h3 data-i18n="blog.title1">مستقبل التغليف الذكي في عصر التكنولوجيا</h3>
+          <p data-i18n="blog.text1">يُعدّ التغليف الذكي الركيزة القادمة في صناعة التعبئة، إذ يدمج تقنيات رموز QR وعلامات RFID وأجهزة الاستشعار لمتابعة صلاحية المنتجات وسلامة سلسلة التوريد. تشير أبحاث MarketsandMarkets إلى أن سوق التغليف الذكي سيتجاوز 26.7 مليار دولار عالمياً، مما يفتح آفاقاً غير مسبوقة للمصنّعين الذين يتبنّون هذه التقنيات مبكراً. كما تُسهم هذه الحلول في تقليل الهدر الغذائي وتحسين تتبع المنتجات عبر سلسلة التوريد.</p>
+          <a href="#" class="blog-read-more">
+            <span data-i18n="blog.read_more">اقرأ المزيد</span>
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- ARTICLE 2: Recyclable Plastic -->
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="blog-img">
+          <img
+            src="https://images.unsplash.com/photo-1542601906897-ecd8e3b51df6?q=80&w=800&auto=format&fit=crop"
+            alt=""
+            loading="lazy"
+          >
+          <span class="blog-category" data-i18n="blog.cat2">الاستدامة</span>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> <span data-i18n="blog.date2">٢ أبريل ٢٠٢٤</span></span>
+            <span><i class="fas fa-clock"></i> <span data-i18n="blog.read2">٤ دقائق قراءة</span></span>
+          </div>
+          <h3 data-i18n="blog.title2">البلاستيك القابل للتدوير ودوره في حماية البيئة</h3>
+          <p data-i18n="blog.text2">يُولّد قطاع التعبئة والتغليف أكثر من 141 مليون طن من النفايات البلاستيكية سنوياً حول العالم. غير أن التقدم في مجال البلاستيك الحيوي وإعادة التدوير الميكانيكي والكيميائي يُحدث نقلة نوعية في نهج الصناعة نحو الاستدامة. يُعدّ البولي إيثيلين عالي الكثافة (HDPE) من أكثر أنواع البلاستيك قابلية لإعادة التدوير، إذ ترتفع معدلات تدويره بشكل متواصل مع تطوّر البنية التحتية لجمع النفايات وزيادة وعي المستهلكين.</p>
+          <a href="#" class="blog-read-more">
+            <span data-i18n="blog.read_more">اقرأ المزيد</span>
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- ARTICLE 3: ISO 9001 -->
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="blog-img">
+          <img
+            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+            alt=""
+            loading="lazy"
+          >
+          <span class="blog-category" data-i18n="blog.cat3">الجودة</span>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> <span data-i18n="blog.date3">١٨ مارس ٢٠٢٤</span></span>
+            <span><i class="fas fa-clock"></i> <span data-i18n="blog.read3">٦ دقائق قراءة</span></span>
+          </div>
+          <h3 data-i18n="blog.title3">معايير ISO 9001 ودورها في ضبط جودة التغليف</h3>
+          <p data-i18n="blog.text3">تضمن شهادة ISO 9001:2015 لمصنّعي التعبئة والتغليف إدارة جودة منهجية ومتكاملة عبر جميع مراحل الإنتاج. يستلزم المعيار توثيقاً دقيقاً لإدارة المخاطر، والتركيز على متطلبات العميل، ودورات التحسين المستمر. وتشمل المتطلبات الجوهرية لمنشآت التغليف: إمكانية تتبع المواد الخام من مصدرها، ومكافحة التلوث الكيميائي والميكروبي، وبروتوكولات معايرة المعدات وصيانتها الدورية.</p>
+          <a href="#" class="blog-read-more">
+            <span data-i18n="blog.read_more">اقرأ المزيد</span>
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">الخط <span>السابع</span></a>
+        <p data-i18n="footer.desc">مصنع الخط السابع للصناعات البلاستيكية — نحو مستقبل أكثر ذكاءً في عالم التغليف.</p>
+        <div class="footer-social">
+          <a href="https://twitter.com"  class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com"  class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/966545424060" class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.quick_links">روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"  data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="products.html" data-i18n="nav.products">معداتنا</a></li>
+          <li><a href="blog.html"   data-i18n="nav.blog">المدونة</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.blog_cats">فئات المدونة</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="footer.cat1">التقنية والابتكار</a></li>
+          <li><a href="#" data-i18n="footer.cat2">الجودة والمعايير</a></li>
+          <li><a href="#" data-i18n="footer.cat3">الاستدامة البيئية</a></li>
+          <li><a href="#" data-i18n="footer.cat4">أخبار المصنع</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact_us">تواصل معنا</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <span class="phone-ltr" dir="ltr">+966 545 424 060</span>
+        </div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@line7factory.com</div>
+        <div class="footer-contact-item"><i class="fas fa-location-dot"></i> <span data-i18n="footer.location">المملكة العربية السعودية</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i> <span data-i18n="footer.hours">الأحد – الخميس: 8 ص – 5 م</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2024 مصنع الخط السابع. جميع الحقوق محفوظة.</p>
+      <p data-i18n="footer.made_with">صُنع بـ ♥ في المملكة العربية السعودية</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

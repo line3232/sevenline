@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <script>(function(){var l=localStorage.getItem('line7_lang')||'ar';var r=document.documentElement;r.lang=l;r.dir=l==='ar'?'rtl':'ltr';}());</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تواصل مع مصنع الخط السابع للصناعات البلاستيكية">
+  <title>تواصل معنا | مصنع الخط السابع</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header" id="mainHeader">
+    <a href="index.html" class="logo">
+      <img src="logo.png" class="logo-img" alt="Line 7 Factory Logo">
+      <span class="logo-text" data-i18n="logo.text">الخط السابع</span>
+    </a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="products.html" data-i18n="nav.products">منتجاتنا</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn" id="langToggle" onclick="toggleLang()">English</button>
+      <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" data-aos="fade-up">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <span><i class="fas fa-chevron-left" style="font-size:10px"></i></span>
+        <span data-i18n="nav.contact">تواصل معنا</span>
+      </div>
+      <h1 data-i18n="contact.page_title">نحن هنا لخدمتك</h1>
+      <p data-i18n="contact.page_sub">فريقنا المتخصص جاهز للإجابة على استفساراتكم وتقديم أفضل حلول التغليف لمشاريعكم</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" data-aos="fade-up">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info">
+      <h2 data-i18n="contact.info_title">ابدأ محادثة معنا الآن</h2>
+      <p data-i18n="contact.info_sub">سواء كنت تبحث عن عرض سعر أو نموذج خاص — نحن هنا للمساعدة على مدار الأسبوع.</p>
+
+      <div class="contact-cards">
+
+        <a href="tel:+966545424060" class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-card-text">
+            <strong data-i18n="ccard.call">ادارة المبيعات</strong>
+            <span class="phone-ltr" dir="ltr">+966 545 424 060</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/966545424060?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-card-icon" style="background:#d4f5e3; color:#25d366;"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-card-text">
+            <strong data-i18n="ccard.whatsapp">واتساب المبيعات</strong>
+            <span class="phone-ltr" dir="ltr">+966 545 424 060</span>
+          </div>
+        </a>
+
+        <a href="mailto:Info@line7-group.com" class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-card-text">
+            <strong data-i18n="ccard.email">البريد الإلكتروني</strong>
+            <span dir="ltr" style="unicode-bidi:embed;">Info@line7-group.com</span>
+          </div>
+        </a>
+
+        <!-- Complaints number -->
+        <a href="tel:+966545452814" class="contact-card">
+          <div class="contact-card-icon" style="background:#fef3f3; color:#e53935;"><i class="fas fa-headset"></i></div>
+          <div class="contact-card-text">
+            <strong data-i18n="ccard.complaint">خط الشكاوي</strong>
+            <span class="phone-ltr" dir="ltr">+966 545 452 814</span>
+          </div>
+        </a>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-card-text">
+            <strong data-i18n="ccard.hours_title">ساعات العمل</strong>
+            <span data-i18n="footer.hours">السبت – الخميس: 8 ص – 5 م</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="social-links">
+        <a href="https://instagram.com" class="social-link" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com"  class="social-link" title="LinkedIn"  target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/966545424060" class="social-link" title="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="150">
+      <h3 data-i18n="contact.form_title">أرسل رسالتك</h3>
+      <p data-i18n="contact.form_sub">أكمل النموذج أدناه وسيتواصل معك فريقنا خلال 24 ساعة</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName" data-i18n="form.name_label">الاسم الكامل <span>*</span></label>
+            <input type="text" id="fullName" name="fullName" required
+                   data-i18n-placeholder="form.name_ph" placeholder="محمد العمري">
+            <span class="error-text" id="nameError" data-i18n="form.name_err">الرجاء إدخال الاسم الكامل</span>
+          </div>
+          <div class="form-group">
+            <label for="company" data-i18n="form.company_label">اسم الشركة / المؤسسة</label>
+            <input type="text" id="company" name="company"
+                   data-i18n-placeholder="form.company_ph" placeholder="شركة الأمثلة المحدودة">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone" data-i18n="form.phone_label">رقم الجوال <span>*</span></label>
+            <input type="tel" id="phone" name="phone" dir="ltr" required placeholder="+966 545 424 060">
+            <span class="error-text" id="phoneError" data-i18n="form.phone_err">يجب أن يحتوي على 9 أرقام على الأقل</span>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="form.email_label">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" dir="ltr" placeholder="example@company.com">
+            <span class="error-text" id="emailError" data-i18n="form.email_err">صيغة البريد الإلكتروني غير صحيحة</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject" data-i18n="form.subject_label">نوع الاستفسار <span>*</span></label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected data-i18n="form.subject_ph">اختر نوع الاستفسار</option>
+            <option value="quote"     data-i18n="form.opt_quote">طلب عرض سعر</option>
+            <option value="sample"    data-i18n="form.opt_sample">طلب عينة منتج</option>
+            <option value="complaint" data-i18n="form.opt_complaint">شكوى أو ملاحظة</option>
+            <option value="other"     data-i18n="form.opt_other">أخرى</option>
+          </select>
+          <span class="error-text" id="subjectError" data-i18n="form.subject_err">الرجاء اختيار نوع الاستفسار</span>
+        </div>
+
+        <div class="form-group">
+          <label for="product" data-i18n="form.product_label">المنتج المطلوب</label>
+          <select id="product" name="product">
+            <option value="" disabled selected data-i18n="form.product_ph">اختر المنتج (اختياري)</option>
+            <option data-i18n="prod1.name">استرتش فلم لتغليف الطبليات</option>
+            <option data-i18n="prod2.name">الشريط اللاصق (الشطرطون)</option>
+            <option data-i18n="prod3.name">فوم التغليف</option>
+            <option data-i18n="prod4.name">الشريط التحذيري</option>
+            <option data-i18n="prod5.name">شريط تربيط بي بي</option>
+            <option data-i18n="prod6.name">شريط ورقي حراري</option>
+            <option data-i18n="prod7.name">أفلام بولي إيثيلين منخفض الكثافة</option>
+            <option data-i18n="prod10.name">رول فقاعات</option>
+            <option data-i18n="prod11.name">رول نايلون</option>
+            <option data-i18n="prod12.name">مكينة تغليف الكرتون</option>
+            <option data-i18n="prod13.name">مكينة تغليف الطبليات</option>
+            <option data-i18n="prod14.name">مكينة ربط الشريط</option>
+            <option data-i18n="form.opt_custom">منتج مخصص</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="form.msg_label">تفاصيل الرسالة <span>*</span></label>
+          <textarea id="message" name="message" required
+                    data-i18n-placeholder="form.msg_ph"
+                    placeholder="اكتب تفاصيل طلبك أو استفساراتك هنا..."></textarea>
+          <span class="error-text" id="messageError" data-i18n="form.msg_err">الرجاء كتابة تفاصيل رسالتك</span>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="contact.submit">إرسال الرسالة</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="success-msg" id="successMsg">
+        <i class="fas fa-circle-check"></i>
+        <h4 data-i18n="contact.success_title">تم إرسال رسالتك بنجاح!</h4>
+        <p data-i18n="contact.success_sub">شكراً لثقتكم بمصنع الخط السابع. سيتواصل معكم فريقنا خلال 24 ساعة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MAP SECTION ══════════════ -->
+  <div class="map-section" data-aos="fade-up">
+    <div class="map-locations-header">
+      <h3 data-i18n="contact.locations_title">مواقعنا</h3>
+      <p class="map-other-branches" data-i18n="contact.other_branches">نتواجد أيضاً في خميس مشيط والمنطقة الشرقية</p>
+    </div>
+
+    <div class="loc-tabs-bar">
+      <button class="loc-tab active" data-loc="riyadh" data-i18n="contact.tab_riyadh">الرياض</button>
+      <button class="loc-tab" data-loc="jeddah" data-i18n="contact.tab_jeddah">جدة</button>
+    </div>
+
+    <div class="map-wrapper map-frame" data-loc="riyadh" style="display:block;">
+      <iframe
+        src="https://maps.google.com/maps?q=24.656667709350586,46.83045196533203&z=15&output=embed"
+        allowfullscreen="" loading="lazy"
+        title="الخط السابع - الرياض">
+      </iframe>
+    </div>
+
+    <div class="map-wrapper map-frame" data-loc="jeddah" style="display:none;">
+      <iframe
+        src="https://maps.google.com/maps?q=21.5169,39.2192&z=14&output=embed"
+        allowfullscreen="" loading="lazy"
+        title="الخط السابع - جدة">
+      </iframe>
+    </div>
+
+    <div class="map-open-btns">
+      <a href="https://www.google.com/maps?q=24.656667709350586,46.83045196533203"
+         target="_blank" rel="noopener" class="map-link-btn" id="btnRiyadh">
+        <i class="fas fa-location-dot"></i>
+        <span data-i18n="ccard.riyadh">الرياض</span>
+      </a>
+      <a href="https://maps.app.goo.gl/bBpcG7Z5UdEeu5Tr8"
+         target="_blank" rel="noopener" class="map-link-btn map-link-btn--secondary" id="btnJeddah">
+        <i class="fas fa-location-dot"></i>
+        <span data-i18n="ccard.jeddah">جدة</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <i class="fas fa-circle-check"></i>
+    <div class="toast-text">
+      <strong data-i18n="contact.toast_title">تم الإرسال بنجاح</strong>
+      <span data-i18n="contact.toast_sub">سنتواصل معك قريباً</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:14px;">
+          <img src="logo.png" style="height:32px;width:auto;" alt="Logo">
+          <span class="logo-text" data-i18n="logo.text" style="color:#ffffff;">الخط السابع</span>
+        </a>
+        <p data-i18n="footer.desc">مصنع الخط السابع للصناعات البلاستيكية — نحو مستقبل أكثر ذكاءً في عالم التغليف.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com"  class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/966545424060" class="footer-social-link" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.quick_links">روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"   data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="products.html" data-i18n="nav.products">منتجاتنا</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.our_products">منتجاتنا</h4>
+        <ul class="footer-links">
+          <li><a href="products.html" data-i18n="prod1.name">استرتش فلم</a></li>
+          <li><a href="products.html" data-i18n="prod2.name">الشريط اللاصق</a></li>
+          <li><a href="products.html" data-i18n="prod3.name">فوم التغليف</a></li>
+          <li><a href="products.html" data-i18n="prod10.name">رول فقاعات</a></li>
+          <li><a href="products.html" data-i18n="prod12.name">مكينة تغليف الكرتون</a></li>
+          <li><a href="products.html" data-i18n="prod13.name">مكينة الطبليات</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact_us">تواصل معنا</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <span class="phone-ltr" dir="ltr">+966 545 424 060</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span dir="ltr" style="unicode-bidi:embed;">Info@line7-group.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-location-dot"></i>
+          <span data-i18n="footer.location">المملكة العربية السعودية</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-clock"></i>
+          <span data-i18n="footer.hours">السبت – الخميس: 8 ص – 5 م</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 مصنع الخط السابع. جميع الحقوق محفوظة.</p>
+      <p data-i18n="footer.made_with">صُنع بـ ♥ في المملكة العربية السعودية</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
